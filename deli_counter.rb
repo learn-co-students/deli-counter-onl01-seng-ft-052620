@@ -7,8 +7,8 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     string = "The line is currently:"
-    katz_deli.each_with_index do |name, i|
-      string << " #{i + 1}. #{name}"
+    katz_deli.each.with_index(1) do |name, i|
+      string << " #{i}. #{name}"
     end
     puts string
   end
