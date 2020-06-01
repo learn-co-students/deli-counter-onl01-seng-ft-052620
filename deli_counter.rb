@@ -3,7 +3,6 @@ require 'pry'
 def line(array)
   array.map!.with_index(1) do |name, index| 
     "#{index}. #{name}"
-    
   end
   
   if array.length > 0 
@@ -14,7 +13,6 @@ def line(array)
 end
 
 def take_a_number(array, name)
-  # binding.pry
   array << name 
   puts "Welcome, #{name}. You are number #{array.length} in line." 
 end
@@ -27,8 +25,3 @@ def now_serving(array)
   end 
 end
 
-# def hamburger(toppings)
-  #toppings.each do |topping|
-    #puts "I love #{topping} on my burgers!"
-  #end
-#end
