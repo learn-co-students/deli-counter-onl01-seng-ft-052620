@@ -1,12 +1,15 @@
 def line(array)
-   array.map.with_index(1) do |name, index|
-  "#{index}, #{name}"  
+   array.map!.with_index(1) do |name, index|
+  "#{index}. #{name}"  
   end
  
  if array.length > 0 
   puts "The line is currently: #{array.join(" ")}"
 else
     puts "The line is currently empty."
+  #   attendees.map.with_index(1) do |attendee, index|
+  # "Hello, #{attendee}! You'll be assigned to room #{index}!"
+  # end 
   end 
 end 
 
@@ -22,4 +25,4 @@ def now_serving(array)
   else
     puts "There is nobody waiting to be served!"
   end 
-end 
+end
