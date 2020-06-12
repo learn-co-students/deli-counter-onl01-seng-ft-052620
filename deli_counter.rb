@@ -1,15 +1,13 @@
 def line(deli)
-
     mod_deli = deli.map.with_index(1) do |name, index|
         "#{index}. #{name}"
     end
-
+    
     if deli.length > 0
-        puts "The line is currently: #{mod_deli.join(" ")}"      
+            puts "The line is currently: #{mod_deli.join(" ")}"      
     else
-        puts "The line is currently empty."
+            puts "The line is currently empty."
     end
-
 end
 
 def take_a_number(deli, name)
